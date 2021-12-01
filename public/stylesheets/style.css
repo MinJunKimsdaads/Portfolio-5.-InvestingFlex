@@ -173,7 +173,7 @@ h1 {
   
 }
 
-#wrap #right #container1 #idpw form input:hover {
+#wrap #right #container1 #idpw form #submit:hover {
   cursor: pointer;
 }
 

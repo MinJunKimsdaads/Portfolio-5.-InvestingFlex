@@ -15,6 +15,7 @@ function resister(){
         password: password.value,
         repeatpassword: repeatpassword.value,
     };
+    console.log(req);
 
     // fetch();
 }
