@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:#32245e;
+    /* background: linear-gradient(45deg,#2f235a,#1a1a32); */
+    background-image: linear-gradient(#352960 2px, transparent 2px),
+    linear-gradient(90deg, #352960 2px, transparent 2px),
+    linear-gradient(rgba(53,41,99,.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53,41,99,.8) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  }

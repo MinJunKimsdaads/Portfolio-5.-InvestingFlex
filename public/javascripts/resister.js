@@ -15,8 +15,24 @@ function resister(){
         password: password.value,
         repeatpassword: repeatpassword.value,
     };
-    console.log(req);
 
-    // fetch();
+    fetch('/resister',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(req),
+    })
+      .then((res)=>res.json())
+      .then((res)=>{
+          if(res.success){
+              location.href='/';
+          } else {
+              alert(res.msg);
+          }
+      })
+      .catch((err)=>{
+          alert('회원가입 중 에러 발생');
+      })
 }
 

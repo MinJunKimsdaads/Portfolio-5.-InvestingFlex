@@ -4,11 +4,22 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const bodyParser = require('body-parser');
-
+const mysql = require('mysql');
+const fs = require('fs');
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
+const crypto = require('crypto');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+//db연결
+const client = mysql.createConnection({
+  user : 'root',
+  password : '비밀번호 설정하세요',
+  database : 'pro'
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
