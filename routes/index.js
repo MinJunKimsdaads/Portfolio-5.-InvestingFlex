@@ -37,12 +37,8 @@ router.get('/resister', function(req, res, next) {
   res.render('resister', { title: 'Express' });
 });
 
-router.post('/resister', function(req, res) {
-  function register() {
-    const client = this.body;
-    UserStorage.save(client)
-}
-
+router.get('/korean', function(req, res, next) {
+  res.render('korean', { title: 'Express' });
 });
 
 router.get('/main', function(req, res, next) {
