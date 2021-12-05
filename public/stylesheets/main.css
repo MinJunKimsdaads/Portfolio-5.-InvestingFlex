@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     background-color: white;
   }
 
@@ -56,11 +56,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px 10px;
-    background-color: #3D0EFF;
+    background-color: #32245e;
     color: white;
   }
 
   #container1 #logout:hover {
+    cursor: pointer;
     background-color: #9D9D9D;
     color: white;
   }
@@ -69,6 +70,7 @@
     width: 80%;
     height: 3%;
     display: block;
+    align-self: center;
     background-color: white;
     color: #9D9D9D;
   }
@@ -82,6 +84,7 @@
     width: 80%;
     height: 30%;
     display: flex;
+    align-self: center;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
@@ -97,14 +100,14 @@
 
   #container1 #menu .menuu:hover {
     cursor: pointer;
-    color: #3D0EFF;
+    color: #32245e;
   }
 
   #container1 #menu .menu1 {
     display: flex;
     /* justify-content: flex-start; */
     align-items: center;
-    color: #3D0EFF;
+    color: #32245e;
   }
 
   #container1 #menu .menu1 span:nth-child(1) {
@@ -186,6 +189,56 @@
     display: block;
     border-radius: 10px 10px;
     background-color: #F5F7FF;
+
+  }
+
+  #container1 #report #imgbox {
+    width: 100%;
+    height: 55%;
+    margin-top: 5%;
+    /* background-color: pink; */
+  }
+
+  #container1 #report #reporttitle {
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    /* background-color: red; */
+  }
+
+  #container1 #report #reporttitle h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  #container1 #report #reporttitle p {
+    color: #9D9D9D;
+    font-size: 12px;
+  }
+
+  #container1 #report a {
+    width: 80%;
+    height: 15%;
+    margin-left: 10%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color: #32245e;
+    border-radius: 30px 30px;
+  }
+
+  #container1 #report a:hover {
+    cursor: pointer;
+    background-color: #9D9D9D;
   }
 
   #container2 {

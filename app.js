@@ -12,6 +12,8 @@ const crypto = require('crypto');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
+
 var app = express();
 
 //db연결
@@ -53,4 +55,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
 module.exports = app;
+

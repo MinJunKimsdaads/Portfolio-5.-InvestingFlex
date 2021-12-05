@@ -1,7 +1,21 @@
-
 const id=document.getElementById('id');
 const password=document.getElementById('password');
 const submit=document.getElementById('submit');
+const content='Investing Flex';
+const typingeffect=document.getElementById('typingeffect');
+var i = 0;
+
+function effect(){
+    let txt=content[i++];
+    typingeffect.innerHTML+=txt;
+    if(i>content.length){
+        typingeffect.innerHTML=''
+        i=0;
+    }
+}
+setInterval(effect,200);
+ 
+
 
 submit.addEventListener('click',login);
 // console.log(id)
