@@ -4,7 +4,7 @@ function aa() {
     var sure=confirm('Are you sure you want to log out?');
     console.log(sure);
     if(sure==false){
-        location.href='/main';
+        location.href='/foreign';
     } else if(sure==true){
         location.href='/';
     }
