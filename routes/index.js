@@ -48,7 +48,6 @@ router.get('/main', function(req, res, next) {
   res.render('main', { title: 'Express' });
 });
 
-router.post('/main', function(req, res, next) {
   const getNews = () => {
     request(
     {
@@ -90,7 +89,7 @@ router.post('/main', function(req, res, next) {
   };
   
   getNews();
-});
+
 
 router.get('/foreign', function(req, res, next) {
   res.render('foreign', { title: 'Express' });
