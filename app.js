@@ -39,7 +39,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // 모든 도메인
+  res.header("Access-Control-Allow-Origin", "https://example.com"); // 특정 도메인
+});
 
 
 // catch 404 and forward to error handler
