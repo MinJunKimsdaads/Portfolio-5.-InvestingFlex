@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Noto+Sans+Display:wght@300;400;600&display=swap" rel="stylesheet">
     <script src='/javascripts/main.js' type="module" defer></script>
     <!-- <script src='/javascripts/test1.js' defer></script> -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async></script>
 </head>
 <body>
     <div id='wrap'>
@@ -21,7 +23,7 @@
                 <a id='logout'>
                     <i class="fas fa-angle-double-left"></i>
                 </a>
-                <div id='title'>
+                <div id='title1'>
                     <h3>Investing Flex</h3>
                 </div>
                 <div id='menu'>
@@ -59,30 +61,116 @@
             </div>
             <div id='container2'>
                 <div id='search'>
+                    <div id='title2'>
+                        <h1>Home</h1>
+                    </div>
                     <i class="fas fa-search"></i>
                     <input type='text' placeholder="Search">
                 </div>
-                <h1>Home</h1>
+                <div id='ticker'>
+                    <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                    "symbols": [
+                    {
+                        "description": "GOLD",
+                        "proName": "TVC:GOLD"
+                    },
+                    {
+                        "description": "SILVER",
+                        "proName": "TVC:SILVER"
+                    },
+                    {
+                        "description": "BITCOIN",
+                        "proName": "BITSTAMP:BTCUSD"
+                    },
+                    {
+                        "description": "NASDAQ",
+                        "proName": "NASDAQ:NDX"
+                    }
+                    ],
+                    "showSymbolLogo": true,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
+                    "locale": "kr"
+                }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+                </div>
                 <div id='section'>
                   <div id='section1'>
-                    <iframe frameborder="0" scrolling="yes" allowtransparency="true" marginwidth="0" marginheight="0" src='https://sslcharts.investing.com/index.php?force_lang=18&pair_ID=1&timescale=300&candles=50&style=candles'></iframe>
+                   <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container" style="width: 100%; height: 100%;">
+                        <div id="tradingview_64b67" style="width: 100%; height: 100%;"></div>
+                    </div>
+                <!-- TradingView Widget END -->
                   </div>
                   <div id='section2'>
-                    <iframe frameborder="0" scrolling="no" allowtransparency="true" marginwidth="0" marginheight="0" src="https://ssltools.investing.com/technical_summary.php?pairs=&curr-name-color=%230059B0&fields=5m,1h,1d&force_lang=18"></iframe>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                        "symbol": "FX_IDC:USDKRW",
+                        "width": "100%",
+                        "height": "100%",
+                        "locale": "kr",
+                        "dateRange": "12M",
+                        "colorTheme": "light",
+                        "trendLineColor": "#32245e",
+                        "underLineColor": "rgba(41, 98, 255, 0.3)",
+                        "underLineBottomColor": "rgba(255, 229, 153, 0)",
+                        "isTransparent": false,
+                        "autosize": true,
+                        "largeChartUrl": ""
+                    }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
                   </div>
-                  <!-- <div id='section3'>
-                    <iframe frameborder="0" scrolling="no" height="274" width="425" allowtransparency="true" marginwidth="0" marginheight="0" src="https://ssltools.investing.com/technical_summary.php?pairs=&curr-name-color=%230059B0&fields=5m,1h,1d&force_lang=18"></iframe>
-                  </div> -->
-                  <div id='section4'>
-                    <iframe frameborder="0" scrolling="no" allowtransparency="true" marginwidth="0" marginheight="0" src="https://kr.widgets.investing.com/crypto-currency-rates?theme=lightTheme&hideTitle=true&roundedCorners=true&pairs=945629,997650,1001803,1010773,1010776" width="100%" height="600"></iframe>
+                  <div id='section3'>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                        {
+                        "width": "100%",
+                        "height": "100%",
+                        "defaultColumn": "overview",
+                        "screener_type": "crypto_mkt",
+                        "displayCurrency": "USD",
+                        "colorTheme": "light",
+                        "locale": "kr"
+                    }
+                        </script>
+                    </div>
+                        <!-- TradingView Widget END -->
                   </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        import data from '/javascripts/test1.js';
-        console.log(data);
-    </script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+        "autosize": true,
+        "symbol": "KRX:KOSPI",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "light",
+        "style": "1",
+        "locale": "kr",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "hide_top_toolbar": true,
+        "save_image": false,
+        "container_id": "tradingview_64b67"
+      }
+        );
+        </script>
 </body>
 </html>

@@ -57,17 +57,106 @@
             </div>
             <div id='container2'>
                 <div id='search'>
+                    <div id='title2'>
+                        <h1>Korean</h1>
+                    </div>
                     <i class="fas fa-search"></i>
                     <input type='text' placeholder="Search">
                 </div>
-                <h1>Korean</h1>
+                <div id='ticker'>
+                    <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="width: 100%; height: 100%;">
+                    <div class="tradingview-widget-container__widget" style="width: 100%; height: 100%;"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                        {
+                        "description": "삼성전자",
+                        "proName": "KRX:005930"
+                        },
+                        {
+                        "description": "카카오",
+                        "proName": "KRX:035720"
+                        },
+                        {
+                        "description": "하이닉스",
+                        "proName": "KRX:000660"
+                        },
+                        {
+                        "description": "NAVER",
+                        "proName": "KRX:035420"
+                        },
+                        {
+                        "description": "KOSDAQ150",
+                        "proName": "KRX:KOSDAQ150"
+                        },
+                        {
+                        "description": "KOSPI200",
+                        "proName": "KRX:KOSPI200"
+                        }
+                    ],
+                    "showSymbolLogo": true,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
+                    "locale": "kr"
+                }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+                </div>
                 <div id='section'>
                   <div id='section1'>
-                    <iframe src="https://kr.widgets.investing.com/ico-calendar?theme=darkTheme&hideTitle=true&roundedCorners=true" width="100%" height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                            {
+                            "colorTheme": "light",
+                            "dateRange": "12M",
+                            "exchange": "KRX",
+                            "showChart": true,
+                            "locale": "kr",
+                            "width": "100%",
+                            "height": "100%",
+                            "largeChartUrl": "",
+                            "isTransparent": false,
+                            "showSymbolLogo": true,
+                            "showFloatingTooltip": false,
+                            "plotLineColorGrowing": "#32245e",
+                            "plotLineColorFalling": "#32245e",
+                            "gridLineColor": "rgba(42, 46, 57, 0)",
+                            "scaleFontColor": "rgba(120, 123, 134, 1)",
+                            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.3)",
+                            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                            "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                        }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
                   </div>
-                  <div id='section2'></div>
+                  <div id='section2'>
+                      <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                            "interval": "1m",
+                            "width": "100%",
+                            "isTransparent": false,
+                            "height": "100%",
+                            "symbol": "KRX:005930",
+                            "showIntervalTabs": true,
+                            "locale": "kr",
+                            "colorTheme": "light"
+                        }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                  </div>
                   <div id='section3'></div>
-                  <div id='section4'></div>
                 </div>
             </div>
         </div>
