@@ -1,4 +1,6 @@
 const logout=document.getElementById('logout');
+// import test from './test1';
+// console.log(test);
 
 function aa() {
     var sure=confirm('Are you sure you want to log out?');
@@ -11,3 +13,5 @@ function aa() {
 }
 
 logout.addEventListener('click',aa);
+
+

@@ -12,14 +12,4 @@ function aa() {
 
 logout.addEventListener('click',aa);
 
-$(function(){
-    $.ajax({
-        url: 'test.php',
-        dataType:'json',
-        success:function(data){
-            console.log(data.items[0].title);
-            $('#section4').append(data.items[0].title);
-            
-        }
-    });
-});
+
