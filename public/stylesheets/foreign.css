@@ -321,26 +321,26 @@
     width: 48%;
     height: 90%;
     border-radius: 20px 20px;
-    background-color: pink;
+    /* background-color: pink; */
   }
 
   #container2 #section #section2 {
-    width: 32%;
-    height: 47.5%;
+    width: 48%;
+    height: 90%;
     border-radius: 20px 20px;
-    background-color: white;
+    /* background-color: white; */
   }
 
-  #container2 #section #section3 {
+  /* #container2 #section #section3 {
     width: 32%;
     height: 47.5%;
     border-radius: 20px 20px;
     background-color: white;
-  }
+  } */
 
-  #container2 #section #section4 {
+  /* #container2 #section #section4 {
     width: 32%;
     height: 47.5%;
     border-radius: 20px 20px;
     background-color: white;
-  }
+  } */
