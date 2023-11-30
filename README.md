@@ -21,4 +21,4 @@
 
 <a href="https://port-0-portfolio-5--investingflex-7xwyjq992llilepkkl.sel4.cloudtype.app/discussion">Demo</a>
 
-<h6>2023-11-29 노션 -> git으로 이동</h6>
+<h6>2023-11-30 노션 -> git으로 이동</h6>
